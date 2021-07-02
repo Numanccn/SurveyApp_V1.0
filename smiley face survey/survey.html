@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Feedback</title>
+        <link rel="icon" href="images/loading.ico" sizes="16x16">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">    
+    </head>
+   
+    <body>
+
+        <div class="survey">
+
+            <h1>We need your feedback</h1>
+            <P>Help us to improve our service</P>
+
+            <h3 class = "question">How was your visit today?</h3>
+            <p id="top_info_text"></p>
+
+            <div id="body_top">
+
+           
+                
+                <form class="smily" action="/" method="post">
+                    <input type="hidden" name="question" value="How was your visit today?" />
+                    <button class="top_emoji" name="feedback" type="submit" value="1" ><img src="images/pouting.png" alt="emoji-pouting"></button>
+                    <button class="top_emoji" name="feedback" type="submit" value="2" ><img src="images/frowning.png" alt="emoji-frowning"></button>
+                    <button class="top_emoji" name="feedback" type="submit" value="3" ><img src="images/expression-less.png" alt="emoji-expressionless"></button>
+                    <button class="top_emoji" name="feedback" type="submit" value="4" ><img src="images/slightly-smiling.png" alt="emoji-slightly-smiling"></button>
+                    <button class="top_emoji" name="feedback" type="submit" value="5" ><img src="images/thumbs-up.png" alt="emoji-thumbs-up"></button>
+                </form>
+
+                <ul class="top_emoji">
+                    <li id="one">Worst</li>
+                    <li id="two">Bad</li>
+                    <li id="three">Average</li>
+                    <li id="four">Good</li>
+                    <li id="five">Excellent</li>
+                </ul>
+
+            </div>
+
+
+            <h3 class = "question" >How friendly was the stuff?</h3>
+            <p id="bottom_info_text"></p>
+
+            <div id="body_bottom">
+
+                
+
+                <form class="smily" action="/" method="post">
+                    <input type="hidden" name="question" value="How friendly was the stuff?" />
+                    <button class="bottom_emoji" name="feedback" type="submit" value="1"><img src="images/pouting.png" alt="emoji-pouting"></button>
+                    <button class="bottom_emoji" name="feedback" type="submit" value="2"><img src="images/frowning.png" alt="emoji-frowning"></button>
+                    <button class="bottom_emoji" name="feedback" type="submit" value="3"><img src="images/expression-less.png" alt="emoji-expressionless"></button>
+                    <button class="bottom_emoji" name="feedback" type="submit" value="4"><img src="images/slightly-smiling.png" alt="emoji-slightly-smiling"></button>
+                    <button class="bottom_emoji" name="feedback" type="submit" value="5"><img src="images/thumbs-up.png" alt="emoji-thumbs-up"></button>
+                </form>
+
+                <ul class="bottom_emoji">
+                    <li id="one">Worst</li>
+                    <li id="two">Bad</li>
+                    <li id="three">Average</li>
+                    <li id="four">Good</li>
+                    <li id="five">Excellent</li>
+                </ul>
+
+            </div>
+            
+        </div>
+
+        <script src="app.js" charset="utf-8"> </script>
+
+    </body>
+
+</html>

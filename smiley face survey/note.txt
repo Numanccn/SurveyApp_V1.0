@@ -1,0 +1,95 @@
+        var sql = mysql.format("SELECT question_id FROM tbl_survey WHERE question=?", [questionOne]);
+        con.query(sql, function(err,results,data) {
+
+            for (j = 0; j < data.length; j++) {
+
+                var qOne_id = results[j].question_id;
+
+                if (results.length === 1) {
+
+              
+                    console.log(x);
+        
+    
+                    
+                } else {
+    
+                    console.log(results);
+    
+                }
+    
+
+            }
+
+
+
+
+
+ var sql = "insert into tbl_survey_data (mac_id, question_id, user_rating, time_stamp) values (' "+ macN +  " ','" + qOne_id + "', ' " + req.body.feedback +  " ', ' " + datetime +" ' )";
+    con.query(sql, function (err) {
+                            
+        if (err) throw err
+    })
+
+
+///// Working CODE for div_top
+
+
+
+
+
+        var sql = mysql.format("SELECT question_id FROM tbl_survey WHERE question=?", [questionOne]);
+        con.query(sql, function(err,results,data) {
+
+            for (j = 0; j < data.length; j++) {
+
+                var qOne_id = results[j].question_id;
+
+                if (results.length === 1) {
+
+                    var sql = "insert into tbl_survey_data (mac_id, question_id, user_rating, time_stamp) values (' "+ macN +  " ','" + qOne_id + "', ' " + req.body.feedback +  " ', ' " + datetime +" ' )";
+                    con.query(sql, function (err) {
+                                            
+                        if (err) throw err
+                    })
+          
+                } else {
+    
+                    console.log("Question doesn't exist in the database or has multiple entry!");
+    
+                }
+
+            }
+
+        });
+
+
+
+///// Working CODE for div_bottom
+
+        var sql = mysql.format("SELECT question_id FROM tbl_survey WHERE question=?", [questionTwo]);
+        con.query(sql, function(err,results,data) {
+
+            for (j = 0; j < data.length; j++) {
+
+                var qTwo_id = results[j].question_id;
+
+                if (results.length === 1) {
+
+                    var sql = "insert into tbl_survey_data (mac_id, question_id, user_rating, time_stamp) values (' "+ macN +  " ','" + qTwo_id + "', ' " + req.body.feedback +  " ', ' " + datetime +" ' )";
+                    con.query(sql, function (err) {
+                                            
+                        if (err) throw err
+                    })
+          
+                } else {
+    
+                    console.log("Question doesn't exist in the database or has multiple entry!");
+    
+                }
+
+            }
+
+        });
+
+

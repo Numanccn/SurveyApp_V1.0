@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chart</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+        <script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    </head>
+
+    <body>
+
+        <h1>Hello</h1>
+        
+        <div class="intro">
+            <p>Welcome to the dashboard</p>
+            <h3 id="avg_info">4.5⭐, average user rating</h3>
+        </div>
+      
+        
+        <div class="container">
+
+            <div class="canvas_top">
+
+                <div id="chart_bar"> </div>
+                
+            </div>
+
+            <div id="navigation">
+                <select id="q-selection" onclick="display();">
+                    <option value="gen">Please choose an option</option>
+                    <option value="Q1">How was your visit today?</option>
+                    <option value="Q2">How friendly was the stuff?</option>
+                    </select>
+            </div>
+    
+            <div class="canvas_middle">
+
+                <div id="chart_pieGen"></div>
+
+                <div id="chart_pieOne"></div>
+
+                <div id="chart_pieTwo"></div>
+            </div>
+    
+            <div class="canvas_bottom">
+                
+                <div id="chart_time_series"> </div>
+                
+            </div>
+
+        </div>
+
+        <script src="app.js" charset="utf-8"></script>
+
+    </body>
+</html>
